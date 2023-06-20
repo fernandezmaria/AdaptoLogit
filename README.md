@@ -1,0 +1,3 @@
+# `AdaptoLogit` package
+
+## Introduction
