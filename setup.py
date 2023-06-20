@@ -15,7 +15,7 @@ setup(
     author_email='100483781@alumnos.uc3m.es',
     license='GNU General Public License',
     zip_safe=True,
-    url='',
+    url='https://github.com/fernandezmaria/AdaptoLogit/archive/refs/tags/0.0.1.tar.gz',
     description='A package implementing adaptive lasso for logistic regression',
     long_description=long_description,
     long_description_content_type='text/markdown',
