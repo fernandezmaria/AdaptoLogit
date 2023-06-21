@@ -19,7 +19,7 @@ setup(
     description='A package implementing adaptive lasso for logistic regression',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    download_url='https://github.com/fernandezmaria/AdaptoLogit/archive/refs/tags/0.0.1.tar.gz',
+    download_url='https://github.com/fernandezmaria/AdaptoLogit/archive/0.0.1.tar.gz',
     keywords=['adaptive-lasso', 'logistic-regression', 'weights'],
     python_requires='>=3.5',
     install_requires=["numpy >= 1.2",
