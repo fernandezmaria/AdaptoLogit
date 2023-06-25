@@ -13,19 +13,15 @@ X, y = make_classification() #100 samples, 20 features, 2 informative
 logistic_model = LogisticRegression(C=100, penalty='l1', solver='liblinear', random_state=100)
 logistic_model.fit(X, y)
 
-al_model = al.AdaptiveLogistic(C=100, random_state=100) # none weight array
+al_model = al.AdaptiveLogistic(C=100, random_state=100) # None weight array
 al_model.fit(X, y)
 
 assert_allclose(logistic_model.coef_, al_model.coef_)  # No output means OK
 
 # Estimate weights
-weight = al.AdaptiveWeights(weight_technique="svc", C=[1, 10, 100, 1000],gamma=[1, 0.1, 0.001, 0.0001],
-                            kernel=['linear'])
+weight = al.AdaptiveWeights(weight_technique="svc", C=[1, 10, 100, 1000], gamma=[1, 0.1, 0.001, 0.0001],
+                            kernel=['linear'], power_weight = (1,1.5))
 weight.fit(X, y)
-
-# #debug
-# print("- Instance of the class")
-# print(', '.join("%s: %s" % item for item in vars(weight).items()))
 
 # Build model
 model = al.AdaptiveLogistic(C=100, random_state=100, weight_array=weight.lasso_weights_[0])
