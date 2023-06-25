@@ -44,3 +44,4 @@ final_model = grid_search.best_estimator_
 # Model coefficients
 print("Model coefficients ", final_model.coef_)
 ```
+Other examples of the use of `AdaptoLogit` can be found in the tests folder in the repository ([here](https://github.com/fernandezmaria/AdaptoLogit/blob/main/tests/example_code.py)), such as the computation of weights with SVC by manually entering the hyperparameters or the resolution of a model without weights, which is equivalent to a lasso logistic regression (non-adaptive). 
