@@ -1,7 +1,7 @@
 # `AdaptoLogit` package
 
 ## Introduction
-`AdaptoLogit` is a python package that proposes the implementation of adaptive lasso to solve logistic regression models. 
+`AdaptoLogit` is a python package that proposes the implementation of adaptive lasso to solve logistic regression models.  It incorporates the use of adaptive weights on the lasso penalty to solve this type of models while providing the user the calculation of these weights in several ways, each based on based on both dimensionality reduction and machine learning techniques.
 
 ## Dependencies
 `AdaptoLogit` requires:
